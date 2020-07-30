@@ -21,12 +21,29 @@ const recN = (texto,num) => {
 
 console.log(recN("TEXTO A RECORTAR",4));
 
+
+
 /*
-3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, 
+3) Programa una función que dada un String te devuelva un Array de textos separados por cierto caracter, 
 pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].
 */
+const sepXCar = (texto,caracterSep) => {
+    return texto.split(caracterSep);
+}
+
+console.log(sepXCar("hola. pinches. batos","."));
+
 
 /*
 4) Programa una función que repita un texto X veces, 
 pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.
 */
+const repX = (texto2,nRep) => {
+    let textof = "";
+    for(let i=1;i<=nRep;i++){
+        textof = texto2 + textof;
+    }
+    return textof;
+}
+
+console.log(repX("holame voy a repetir",4));
