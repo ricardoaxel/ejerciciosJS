@@ -15,12 +15,15 @@ console.log(cuentaC("holasaa"));
 pe. miFuncion("Hola Mundo", 4) devolverá "Hola".
 */
 
-const recN = (texto,num) => {
-    return texto.substr(0,num);
-}
+const recN = (texto,num= undefined) => 
+    (!texto)
+    ?console.warn("No hay texto")
+        :(num===undefined)
+        ? console.warn("Mp hay numero de división definido") 
+            :texto.substr(0,num)
 
-console.log(recN("TEXTO A RECORTAR",4));
 
+console.log(recN("hola"));
 
 
 /*
@@ -39,11 +42,7 @@ console.log(sepXCar("hola. pinches. batos","."));
 pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.
 */
 const repX = (texto2,nRep) => {
-    let textof = "";
-    for(let i=1;i<=nRep;i++){
-        textof = texto2 + textof;
-    }
-    return textof;
-}
+    for(let i=1;i<=nRep;i++) console.log(texto2,i);
+}   
 
 console.log(repX("holame voy a repetir",4));
