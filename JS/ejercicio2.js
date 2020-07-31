@@ -5,9 +5,7 @@ pe. miFuncion("Hola Mundo") devolverá "odnuM aloH".
 
 //Método 1
 
-
 const invertir = (palabra) => palabra.split("").reverse().join("")   
-
 console.log(invertir("holaa"));
 
 //método 2
@@ -24,7 +22,6 @@ const invertir2 = (palabra) => {
 }
 
 console.log(invertir2("esta palabra ta chida")); 
-
 
 
 /*
